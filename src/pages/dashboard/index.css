@@ -1,0 +1,214 @@
+
+.card{
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.card .card-text{
+    color: #b5b9cd;
+    font-size: 14px;
+}
+.card-text {
+    align-self: flex-start;
+}
+.card img{
+    padding: 15px;
+}
+.number-table{
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.table {    
+    color: #b5b9cd;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.number-table p{
+    color: #b5b9cd;
+    font-size: 16px;
+}
+.table td, .table th {
+    padding: .75rem;
+    border-top: none;
+    vertical-align: middle;
+}
+.table td button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.table thead th {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+    color: #ffffff;
+    background-color: rgb(102 68 198 / 40%);
+    transition: .3s;
+}
+.table-hover tbody tr {
+    transition: .6s;
+}
+.table-hover tbody tr:hover .action,
+.table-hover tbody tr:hover .action:active,
+.modal .action:hover,
+.modal.action:active{
+    transition: .6s;
+}
+button:focus{
+    outline: none;
+}
+.plus{
+    background-color: #6648c7;
+    border: none;
+    transition: .6s;
+    
+}
+.plus:hover,
+.plus:active
+.plus:visited,
+.plus:focus{
+    color: #ffffff;
+    background-color: #6648c7!important;
+    transition: .6s;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+
+
+@-webkit-keyframes pulse {
+        0% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+}
+@keyframes pulse {
+        0% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+} 
+.action{
+    background-color: #6648c7;
+    border:1px solid #6648c7;
+}
+.action:hover {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+
+    .page-link {
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: #eb95e4;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+    }
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: #eb95e4;
+        border-color: #eb95e4;
+    }
+    .page-link span {
+        color: #eb95e4;
+    }
